@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1 th:inline="text">Добро пожаловать в наш магазин!</h1>
+<br><br>
+<form th:action="@{/login}" method="post">
+    <input type="submit" value="Войти"/>
+</form>
+<br>
+<form th:action="@{/registration}" method="get">
+    <input type="submit" value="Регистрация"/>
+</form>
+<br>
+<form th:action="@{/logout}" method="get">
+    <input type="submit" value="Выход"/>
+</form>
+<br><br>
+<a href="/show-cars">Просмотреть машины</a>
+<br><br>
+<a href="/show-users">Только для Admin</a>
+</body>
+</html>

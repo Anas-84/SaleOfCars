@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show users</title>
+</head>
+<body>
+<h1 th:inline="text">Уважаемый, [[${#httpServletRequest.remoteUser}]]!</h1>
+<form th:action="@{/logout}" method="get">
+    <input type="submit" value="Выход"/>
+</form>
+<br><br><br>
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Active</th>
+    </tr>
+</table>
+<br><br><br>
+<a href="/home">На главную страницу</a>
+</body>
+</html>

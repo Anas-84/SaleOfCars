@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>show cars</title>
+</head>
+<body>
+<h1 th:inline="text">Уважаемый, [[${#httpServletRequest.remoteUser}]]!</h1>
+<form th:action="@{/logout}" method="get">
+    <input type="submit" value="Выход"/>
+</form>
+<br><br>
+<table>
+    <tr>
+        <th>Mark</th>
+        <th>Model</th>
+        <th>Year release</th>
+        <th>Price</th>
+    </tr>
+</table>
+<br><br><br><br>
+<a href="/home">На главную страницу</a>
+</body>
+</html>
